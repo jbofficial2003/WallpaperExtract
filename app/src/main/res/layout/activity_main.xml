@@ -4,7 +4,7 @@
     android:background="#040716"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top|center_horizontal"
     android:padding="16dp">
     <TextView
         android:layout_width="match_parent"
@@ -12,13 +12,17 @@
         android:text="@string/app_name"
         android:textSize="24sp"
         android:gravity="center"
-        android:padding="16dp" />
+        android:textColor="#00ffff"
+        android:padding="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"/>
 
     <ImageView
         android:id="@+id/wallpaperPreview"
         android:layout_width="250dp"
         android:layout_height="400dp"
         android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/wallpaper_preview" />
 
     <Button
@@ -28,5 +32,5 @@
         android:text="@string/save"
         android:hapticFeedbackEnabled="true"
         android:backgroundTint="#00ffff"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="150dp" />
 </LinearLayout>
