@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
             val contentValues = ContentValues().apply {
                 put(MediaStore.Images.Media.DISPLAY_NAME, filename)
                 put(MediaStore.Images.Media.MIME_TYPE, "image/png")
-                put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/Wallpapers")
+                put(MediaStore.Images.Media.RELATIVE_PATH, "Pictures/WallpaperExtractor")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                     put(MediaStore.Images.Media.IS_PENDING, 1)
                 }
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                                 contentValues.put(MediaStore.Images.Media.IS_PENDING, 0)
                                 contentResolver.update(uri, contentValues, null, null)
                             }
-                            Toast.makeText(this, "Wallpaper saved (PNG, lossless)!", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Wallpaper saved", Toast.LENGTH_SHORT).show()
                         } else {
                             Toast.makeText(this, "Compression failed", Toast.LENGTH_SHORT).show()
                         }
