@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     android:gravity="top|center_horizontal"
     android:padding="16dp">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,10 +32,12 @@
 
     <Button
         android:id="@+id/saveButton"
+        android:soundEffectsEnabled="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save"
         android:hapticFeedbackEnabled="true"
         android:backgroundTint="#00ffff"
         android:layout_marginTop="150dp" />
+
 </LinearLayout>
